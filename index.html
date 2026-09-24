@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Website günstig erstellen lassen | Festpreis ab 599 € | RITT HAPPENS</title>
+<meta name="description" content="Website zum Festpreis erstellen lassen: individuelles Design, Texte und SEO inklusive, fertig in 7 bis 14 Werktagen. Webdesigner aus Bamberg mit 70+ Projekten.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preload" href="assets/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Google Ads Tag hier einfügen (gtag.js mit AW-XXXXXXXXX) -->
+
+<style>
+@font-face{font-family:'Montserrat';font-style:normal;font-display:swap;font-weight:100 900;src:url(assets/fonts/montserrat-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Montserrat';font-style:normal;font-display:swap;font-weight:100 900;src:url(assets/fonts/montserrat-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --navy:#1F242D;
+  --navy-deep:#171B22;
+  --navy-line:#343A45;
+  --gelb:#F1BD58;
+  --gelb-dunkel:#D9A23A;
+  --gelb-hell:#FCF1D8;
+  --papier:#F5F4F1;
+  --linie:#E2DFD8;
+  --text:#1F242D;
+  --grau:#565C67;
+  --grau-hell:#BFC3CB;
+  --weiss:#FFFFFF;
+  --radius:14px;
+  --max:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Montserrat',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--text);background:var(--weiss);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-0.02em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--gelb);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:12px;font:700 16px/1 'Montserrat',sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.btn-gelb{background:var(--gelb);color:var(--navy)}
+.btn-gelb:hover{background:var(--gelb-dunkel)}
+.btn-rand{border-color:currentColor;background:transparent}
+.btn-rand:hover{background:rgba(255,255,255,.08)}
+.btn svg{flex:none}
+
+/* Header */
+.kopf{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--linie);padding-top:env(safe-area-inset-top,0px)}
+.kopf .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+.kopf img{height:58px;width:auto}
+.kopf-rechts{display:flex;align-items:center;gap:20px}
+.kopf-tel{display:flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;font-size:16px}
+.kopf-tel small{display:block;font-weight:500;font-size:12px;color:var(--grau);line-height:1.2}
+.kopf .btn{min-height:46px;padding:0 20px;font-size:15px}
+
+/* Hero */
+.hero{background:var(--navy);color:var(--weiss);padding:64px 0 88px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px;align-items:start}
+.sterne{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px}
+.sterne span{color:var(--gelb);letter-spacing:2px;font-size:18px}
+.hero h1{font-size:clamp(38px,5.2vw,64px);font-weight:800;margin:22px 0 22px}
+.hero h1 .preis{display:inline-block;background:var(--gelb);color:var(--navy);padding:0 .22em;border-radius:8px;transform:rotate(-1.5deg);margin-top:.12em}
+.hero-lead{font-size:19px;color:#D7DAE0;max-width:560px}
+.netto-hinweis{font-size:13px;color:var(--grau-hell);margin-top:10px}
+.haken{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;max-width:580px}
+.haken li{display:flex;align-items:center;gap:12px;font-weight:600;font-size:16px}
+.haken .punkt{flex:none;width:28px;height:28px;border-radius:50%;background:var(--gelb);display:grid;place-items:center}
+.hero-person{display:flex;align-items:center;gap:16px;margin-top:36px;padding-top:28px;border-top:1px solid var(--navy-line);max-width:580px}
+.hero-person img{width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:3px solid var(--gelb)}
+.hero-person p{font-size:15px;color:#D7DAE0;line-height:1.5}
+.hero-person strong{color:var(--weiss)}
+
+/* Formular */
+.formular{background:var(--weiss);color:var(--text);border-radius:20px;padding:34px;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+.formular h2{font-size:27px;font-weight:800}
+.formular .unter{font-size:15px;color:var(--grau);margin:6px 0 22px}
+.feld{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.feld label{font-size:14px;font-weight:700}
+.feld label span{font-weight:500;color:var(--grau)}
+.feld input,.feld select,.feld textarea{font:500 16px 'Montserrat',sans-serif;color:var(--text);min-height:50px;padding:12px 14px;border:1.5px solid #CFCBC2;border-radius:10px;background:#FBFAF8;width:100%}
+.feld textarea{min-height:92px;resize:vertical}
+.feld input:focus,.feld select:focus,.feld textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px var(--gelb-hell)}
+.zeile{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--grau);line-height:1.45;margin:4px 0 18px}
+.check input{width:20px;height:20px;margin:0;flex:none;accent-color:var(--navy)}
+.formular .btn{width:100%;min-height:58px;font-size:17px}
+.formular .fuss{font-size:13px;color:var(--grau);margin-top:12px;text-align:center}
+.formular fieldset{border:0;margin:0;padding:0;min-width:0}
+.formular legend{padding:0;margin-bottom:16px;display:block;width:100%}
+.formular .titel{display:block;font-size:27px;font-weight:800;line-height:1.15;letter-spacing:-0.02em}
+.formular legend .unter{display:block;font-size:15px;color:var(--grau);margin-top:6px}
+.fortschritt{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;color:var(--grau);margin-bottom:22px}
+.balken{flex:1;height:6px;border-radius:99px;background:var(--papier);overflow:hidden}
+.balken i{display:block;height:100%;width:50%;background:var(--gelb);border-radius:99px;transition:width .3s}
+.wahl-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.wahl{position:relative;cursor:pointer}
+.wahl input{position:absolute;opacity:0;width:1px;height:1px}
+.wahl-box{display:flex;flex-direction:column;gap:2px;min-height:84px;padding:14px 14px 14px 16px;border:1.5px solid #CFCBC2;border-radius:12px;background:#FBFAF8;transition:border-color .15s,background .15s;position:relative}
+.wahl-box strong{font-size:16px;line-height:1.3;padding-right:26px}
+.wahl-box small{font-size:13px;color:var(--grau)}
+.wahl-haken{position:absolute;top:12px;right:12px;width:22px;height:22px;border-radius:50%;border:1.5px solid #CFCBC2;display:grid;place-items:center;color:transparent;background:#fff}
+.wahl:hover .wahl-box{border-color:var(--navy)}
+.wahl input:checked+.wahl-box{border-color:var(--navy);background:var(--gelb-hell)}
+.wahl input:checked+.wahl-box .wahl-haken{background:var(--navy);border-color:var(--navy);color:var(--gelb)}
+.wahl input:focus-visible+.wahl-box{outline:3px solid var(--gelb);outline-offset:2px}
+.fehler{color:#B42318;font-size:14px;font-weight:600;margin:-6px 0 14px}
+.schritt-fuss{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:13px;color:var(--grau)}
+.zurueck{background:none;border:0;padding:8px 0;min-height:44px;font:700 14px 'Montserrat',sans-serif;color:var(--navy);cursor:pointer;text-decoration:underline}
+.js-steps #schritt-2{display:none}
+.js-steps.auf-2 #schritt-1{display:none}
+.js-steps.auf-2 #schritt-2{display:block}
+.formular:not(.js-steps) .fortschritt,.formular:not(.js-steps) .zurueck,.formular:not(.js-steps) #zu-schritt-2{display:none}
+.formular:not(.js-steps) #schritt-2{margin-top:28px}
+.feld input[aria-invalid=true]{border-color:#B42318}
+@media (max-width:640px){.wahl-grid{grid-template-columns:minmax(0,1fr);gap:10px}.wahl-box{min-height:0;padding:12px 14px}}
+
+
+/* Sektionen */
+.sek{padding:104px 0}
+.sek-papier{background:var(--papier)}
+.kopfzeile{max-width:760px;margin-bottom:52px}
+.kopfzeile h2{font-size:clamp(32px,3.8vw,48px);font-weight:800}
+.kopfzeile p{font-size:18px;color:var(--grau);margin-top:16px}
+
+/* Referenzen */
+.refs{display:grid;grid-auto-flow:column;grid-auto-columns:340px;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 24px 20px;margin:0 calc(50% - 50vw);padding-left:max(24px,calc(50vw - 576px));scroll-padding-left:max(24px,calc(50vw - 576px));scrollbar-color:var(--gelb) transparent}
+.ref{margin:0;scroll-snap-align:start;outline-offset:6px}
+.browser{background:var(--navy);border-radius:12px;padding:0 0 0;overflow:hidden;box-shadow:0 18px 40px rgba(31,36,45,.18)}
+.browser-leiste{display:flex;gap:6px;padding:10px 12px}
+.browser-leiste i{width:8px;height:8px;border-radius:50%;background:#4A515E}
+.fenster{height:480px;overflow:hidden;background:#fff}
+.fenster img{width:100%;height:auto;transform:translateY(0);transition:transform 6s ease-in-out}
+.ref:hover .fenster img,.ref:focus-within .fenster img{transform:translateY(calc(-100% + 480px))}
+.ref figcaption{padding:16px 2px 0}
+.ref figcaption strong{display:block;font-size:17px;font-weight:700;line-height:1.3}
+.ref figcaption span{font-size:14px;color:var(--grau)}
+.refs-hinweis{margin-top:36px;font-size:15px;color:var(--grau)}
+
+/* Preise */
+.preise{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.paket{background:var(--weiss);border:1.5px solid var(--linie);border-radius:20px;padding:34px;display:flex;flex-direction:column;gap:22px;position:relative}
+.paket h3{font-size:24px;font-weight:700}
+.paket .fuer{font-size:15px;color:var(--grau);margin-top:4px}
+.betrag{display:flex;align-items:baseline;gap:6px;font-weight:800}
+.betrag b{font-size:58px;letter-spacing:-0.03em;line-height:1}
+.betrag em{font-style:normal;font-size:24px}
+.betrag small{font-size:14px;font-weight:500;color:var(--grau);margin-left:6px}
+.betrag .ab{font-size:18px;font-weight:600}
+.leistungen{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;font-size:16px;flex-grow:1}
+.leistungen li{display:flex;gap:10px;align-items:center}
+.paket .btn{width:100%}
+.paket-top{background:var(--navy);color:var(--weiss);border-color:var(--navy)}
+.paket-top .fuer,.paket-top .betrag small{color:var(--grau-hell)}
+.plakette{position:absolute;top:-14px;left:34px;background:var(--gelb);color:var(--navy);font-size:13px;font-weight:800;padding:6px 14px;border-radius:999px}
+.preis-info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}
+.info-kasten{background:var(--papier);border-radius:16px;padding:24px 28px;font-size:16px;line-height:1.55}
+.info-kasten strong{display:block;font-size:17px;margin-bottom:4px}
+
+/* Über mich */
+.ueber{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:center}
+.ueber-bild{position:relative}
+.ueber-bild img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:52% 30%;border-radius:22px}
+.ueber-bild .stempel{position:absolute;right:-18px;bottom:28px;background:var(--gelb);color:var(--navy);border-radius:16px;padding:16px 20px;font-weight:800;font-size:15px;line-height:1.3;transform:rotate(-3deg);box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.ueber h2{font-size:clamp(32px,3.8vw,48px);font-weight:800;margin-bottom:22px}
+.ueber p{font-size:18px;color:var(--grau);margin-bottom:16px}
+.ueber p strong{color:var(--text)}
+.fakten{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:32px;padding-top:28px;border-top:1.5px solid var(--linie)}
+.fakten b{display:block;font-size:30px;font-weight:800;line-height:1.1}
+.fakten span{font-size:14px;color:var(--grau);line-height:1.35;display:block;margin-top:4px}
+
+/* Vergleich */
+.vergleich-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:center}
+.vergleich-grid h2{font-size:clamp(32px,3.8vw,48px);font-weight:800;margin-bottom:22px}
+.vergleich-grid p{font-size:18px;color:var(--grau);margin-bottom:16px}
+.tabelle-wrap{overflow-x:auto;border:1.5px solid var(--linie);border-radius:18px;background:var(--weiss)}
+table{width:100%;border-collapse:collapse;font-size:16px;min-width:520px}
+th,td{padding:15px 14px;text-align:center;border-top:1px solid var(--linie)}
+thead th{border-top:0;background:var(--papier);font-size:14px;font-weight:700}
+th[scope=row]{text-align:left;font-weight:600;padding-left:20px}
+.wir{background:var(--gelb-hell);font-weight:700}
+thead .wir{background:var(--navy);color:var(--gelb)}
+.nein{color:var(--grau)}
+
+/* Ablauf */
+.schritte{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;list-style:none;margin:0;padding:0;counter-reset:s}
+.schritte li{border-top:3px solid var(--navy);padding-top:22px;counter-increment:s}
+.schritte li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--gelb);font-weight:800;font-size:19px;margin-bottom:16px}
+.schritte h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.schritte p{font-size:16px;color:var(--grau)}
+
+/* Bewertungen */
+.bew-kopf{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:48px;flex-wrap:wrap}
+.bew-kopf h2{font-size:clamp(32px,3.8vw,48px);font-weight:800;max-width:640px}
+.bew-schnitt{display:flex;align-items:center;gap:12px;font-weight:600}
+.bew-schnitt span{color:var(--gelb-dunkel);font-size:22px;letter-spacing:2px}
+.bewertungen{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.bewertung{background:var(--weiss);border-radius:18px;padding:30px;display:flex;flex-direction:column;gap:16px;margin:0}
+.bewertung .st{color:var(--gelb-dunkel);letter-spacing:2px}
+.bewertung blockquote{margin:0;font-size:17px;line-height:1.6;flex-grow:1}
+.bewertung figcaption{font-weight:700;font-size:15px}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px}
+.faq-grid h2{font-size:clamp(32px,3.8vw,48px);font-weight:800}
+.faq-grid .kontakt-mini{margin-top:24px;font-size:16px;color:var(--grau)}
+.faq-grid .kontakt-mini a{font-weight:700;color:var(--text)}
+details{border-top:1.5px solid var(--linie)}
+details:last-child{border-bottom:1.5px solid var(--linie)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-size:19px;font-weight:700}
+summary::-webkit-details-marker{display:none}
+summary .plus{flex:none;width:32px;height:32px;border-radius:50%;background:var(--papier);display:grid;place-items:center;transition:transform .2s}
+details[open] summary .plus{transform:rotate(45deg);background:var(--gelb)}
+details p{padding:0 48px 24px 0;font-size:17px;color:var(--grau)}
+
+/* Abschluss */
+.abschluss{background:var(--navy);color:var(--weiss);border-radius:28px;padding:72px 64px;display:flex;justify-content:space-between;align-items:center;gap:48px}
+.abschluss h2{font-size:clamp(30px,3.6vw,46px);font-weight:800}
+.abschluss p{font-size:18px;color:#D7DAE0;margin-top:14px;max-width:560px}
+.abschluss .knoepfe{display:flex;flex-direction:column;gap:12px;min-width:300px}
+
+/* Footer */
+.fusszeile{background:var(--navy-deep);color:var(--grau-hell);padding:48px 0 32px;font-size:15px;margin-top:104px}
+.fusszeile .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.fusszeile img{height:54px;width:auto}
+.fusszeile nav{display:flex;gap:24px;flex-wrap:wrap}
+.fusszeile a{color:var(--grau-hell)}
+
+/* Mobile Leiste */
+.mobil-leiste{display:none}
+
+@media (max-width:960px){
+  .hero .wrap,.ueber,.vergleich-grid,.faq-grid{grid-template-columns:minmax(0,1fr);gap:48px}
+  .preise,.bewertungen{grid-template-columns:minmax(0,1fr)}
+  .paket-top{order:-1}
+  .schritte{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .abschluss{flex-direction:column;align-items:stretch;padding:48px 32px}
+  .abschluss .knoepfe{min-width:0}
+  .ueber-bild{max-width:460px}
+  .ueber-bild .stempel{right:12px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  .kopf .wrap{height:64px}
+  .kopf img{height:38px}
+  .kopf-tel small,.kopf .btn{display:none}
+  .hero{padding:40px 0 56px}
+  .hero-lead{font-size:17px}
+  .haken{grid-template-columns:minmax(0,1fr)}
+  .formular{padding:24px 20px}
+  .zeile{grid-template-columns:minmax(0,1fr);gap:0}
+  .sek{padding:64px 0}
+  .kopfzeile{margin-bottom:36px}
+  .refs{grid-auto-columns:78%;padding-left:24px;scroll-padding-left:24px}
+  .fenster{height:360px}
+  .ref:hover .fenster img,.ref:focus-within .fenster img{transform:translateY(calc(-100% + 360px))}
+  .preis-info{grid-template-columns:minmax(0,1fr)}
+  .paket{padding:28px 24px}
+  .betrag b{font-size:48px}
+  .fakten{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .schritte{grid-template-columns:minmax(0,1fr)}
+  details p{padding-right:0}
+  .fusszeile{margin-top:64px}
+  .mobil-leiste{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--weiss);border-top:1px solid var(--linie);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -8px 24px rgba(0,0,0,.08)}
+  .mobil-leiste .btn{min-height:50px;padding:0 12px;font-size:15px}
+  .mobil-leiste .btn-rand{color:var(--navy)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .fenster img,summary .plus,.btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="kopf">
+  <div class="wrap">
+    <a href="#top" aria-label="RITT HAPPENS Startseite"><img src="assets/logo.png" alt="RITT HAPPENS" width="640" height="445"></a>
+    <div class="kopf-rechts">
+      <a class="kopf-tel" href="tel:+491724985509">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span>0172 4985509<small>Direkt zu Lukas</small></span>
+      </a>
+      <a class="btn btn-gelb" href="#angebot">Angebot anfordern</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="sterne"><span aria-hidden="true">★★★★★</span>5,0 bei 20+ Google-Bewertungen</div>
+      <h1>Website günstig erstellen lassen. Zum Festpreis ab <span class="preis">599&nbsp;€</span></h1>
+      <p class="hero-lead">Individuelles Design statt Baukasten, Texte und SEO inklusive, online in 7 bis 14 Werktagen. Du weißt vorher, was es kostet. Nachforderungen gibt es nicht.</p>
+      <p class="netto-hinweis">Alle Preise sind Nettopreise zzgl. 19 % MwSt.</p>
+      <ul class="haken">
+        <li><span class="punkt"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F242D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Fester Preis, schriftlich</li>
+        <li><span class="punkt"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F242D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Texte und SEO inklusive</li>
+        <li><span class="punkt"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F242D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Online in 7 bis 14 Werktagen</li>
+        <li><span class="punkt"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F242D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Website gehört zu 100 % dir</li>
+      </ul>
+      <div class="hero-person">
+        <img src="assets/lukas-rittmaier.jpg" alt="Lukas Rittmaier, Webdesigner" width="68" height="68">
+        <p><strong>Lukas Rittmaier</strong>, Webdesigner aus Bamberg.<br>Du sprichst vom ersten Anruf bis zum Livegang nur mit mir.</p>
+      </div>
+    </div>
+
+    <form class="formular" id="angebot" action="https://formsubmit.co/lukas@ritt-happens.de" method="POST" novalidate>
+      <div class="fortschritt" aria-hidden="true"><span class="balken"><i id="balken"></i></span><span id="schritt-text">Schritt 1 von 2</span></div>
+      <input type="hidden" name="_subject" value="Neue Anfrage über die Festpreis-Landingpage">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" id="weiter" value="">
+      <input type="text" name="_honey" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <fieldset class="schritt" id="schritt-1">
+        <legend><span class="titel">Festpreis-Angebot anfordern</span><span class="unter">Was für eine Website brauchst du? Preise netto zzgl. MwSt.</span></legend>
+        <div class="wahl-grid">
+          <label class="wahl"><input type="radio" name="Paket" value="Landingpage (599 €)" required><span class="wahl-box"><span class="wahl-haken"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><strong>Landingpage</strong><small>599 €, 1 Seite</small></span></label>
+          <label class="wahl"><input type="radio" name="Paket" value="Business Website (999 €)"><span class="wahl-box"><span class="wahl-haken"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><strong>Business Website</strong><small>999 €, bis 5 Seiten</small></span></label>
+          <label class="wahl"><input type="radio" name="Paket" value="Boost Website (ab 1.899 €)"><span class="wahl-box"><span class="wahl-haken"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><strong>Boost Website</strong><small>ab 1.899 €, bis 10 Seiten</small></span></label>
+          <label class="wahl"><input type="radio" name="Paket" value="Noch unsicher"><span class="wahl-box"><span class="wahl-haken"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><strong>Noch unsicher</strong><small>Bitte beraten</small></span></label>
+        </div>
+        <p class="fehler" id="fehler-1" role="alert" hidden>Bitte wähle eine Option aus.</p>
+        <button class="btn btn-gelb" type="button" id="zu-schritt-2">Weiter</button>
+        <p class="fuss">Kostenlos und unverbindlich. Nur 2 kurze Schritte.</p>
+      </fieldset>
+
+      <fieldset class="schritt" id="schritt-2">
+        <legend><span class="titel">Fast geschafft.</span><span class="unter">Wohin darf ich dein Angebot schicken? Antwort innerhalb von 24 Stunden.</span></legend>
+        <div class="feld"><label for="name">Name</label><input id="name" name="Name" type="text" autocomplete="name" required></div>
+        <div class="zeile">
+          <div class="feld"><label for="tel">Telefon</label><input id="tel" name="Telefon" type="tel" autocomplete="tel" required></div>
+          <div class="feld"><label for="mail">E-Mail</label><input id="mail" name="E-Mail" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="feld"><label for="nachricht">Kurz zu deinem Projekt <span>(optional)</span></label><textarea id="nachricht" name="Nachricht" placeholder="Branche, bestehende Website, Wunschtermin"></textarea></div>
+        <label class="check"><input type="checkbox" name="Datenschutz" value="akzeptiert" required><span>Ich habe die <a href="https://ritt-happens.de/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden.</span></label>
+        <p class="fehler" id="fehler-2" role="alert" hidden>Bitte fülle alle Felder aus und bestätige den Datenschutz.</p>
+        <button class="btn btn-gelb" type="submit">Kostenloses Angebot anfordern</button>
+        <div class="schritt-fuss"><button type="button" class="zurueck" id="zu-schritt-1">Zurück</button><span>Oder direkt per <a href="https://wa.me/491724985509">WhatsApp</a></span></div>
+      </fieldset>
+    </form>
+  </div>
+</section>
+
+<!-- REFERENZEN -->
+<section class="sek" id="referenzen">
+  <div class="wrap">
+    <div class="kopfzeile">
+      <h2>Echte Websites, die ich zuletzt gebaut habe.</h2>
+      <p>Jede davon zum Festpreis. Fahr mit der Maus über eine Website oder tipp sie an, um sie komplett durchzuscrollen. Seitlich wischen zeigt weitere Projekte.</p>
+    </div>
+    <div class="refs">
+      <figure class="ref" tabindex="0">
+        <div class="browser"><div class="browser-leiste" aria-hidden="true"><i></i><i></i><i></i></div><div class="fenster"><img src="assets/referenz-goldankauf-berlin.jpg" alt="Website von SIMONS Goldankauf Berlin" loading="lazy" width="567" height="2560"></div></div>
+        <figcaption><strong>Goldankauf Berlin</strong><span>Juwelier mit Goldrechner</span></figcaption>
+      </figure>
+      <figure class="ref" tabindex="0">
+        <div class="browser"><div class="browser-leiste" aria-hidden="true"><i></i><i></i><i></i></div><div class="fenster"><img src="assets/referenz-rosenstock-insektenschutz.jpg" alt="Website von Rosenstock Insektenschutz" loading="lazy" width="696" height="2560"></div></div>
+        <figcaption><strong>Rosenstock Insektenschutz</strong><span>Handwerk aus Bamberg</span></figcaption>
+      </figure>
+      <figure class="ref" tabindex="0">
+        <div class="browser"><div class="browser-leiste" aria-hidden="true"><i></i><i></i><i></i></div><div class="fenster"><img src="assets/referenz-lh-immobilien.jpg" alt="Website von LH Immobilien" loading="lazy" width="577" height="2560"></div></div>
+        <figcaption><strong>LH Immobilien GmbH</strong><span>Immobilienankauf in Sachsen</span></figcaption>
+      </figure>
+      <figure class="ref" tabindex="0">
+        <div class="browser"><div class="browser-leiste" aria-hidden="true"><i></i><i></i><i></i></div><div class="fenster"><img src="assets/referenz-olwo.jpg" alt="Website der OLWO GmbH" loading="lazy" width="506" height="2560"></div></div>
+        <figcaption><strong>OLWO GmbH</strong><span>Objektbetreuung in Oldenburg</span></figcaption>
+      </figure>
+      <figure class="ref" tabindex="0">
+        <div class="browser"><div class="browser-leiste" aria-hidden="true"><i></i><i></i><i></i></div><div class="fenster"><img src="assets/referenz-volena.jpg" alt="Website von Voléna Haar Extensions" loading="lazy" width="700" height="2306"></div></div>
+        <figcaption><strong>Voléna</strong><span>Haar Extensions für Friseure</span></figcaption>
+      </figure>
+    </div>
+    <p class="refs-hinweis">Über 70 Projekte umgesetzt, unter anderem für Physiotherapie, Restaurants, Kammerjäger, Yoga Studios und Pflegedienste.</p>
+  </div>
+</section>
+
+<!-- PREISE -->
+<section class="sek sek-papier" id="preise">
+  <div class="wrap">
+    <div class="kopfzeile">
+      <h2>Du weißt vorher, was deine Website kostet.</h2>
+      <p>Alle Preise sind Nettopreise zzgl. 19 % MwSt. Kein Stundenzettel, keine versteckten Kosten, keine Abo-Falle.</p>
+    </div>
+    <div class="preise">
+      <article class="paket">
+        <div><h3>Landingpage</h3><p class="fuer">Für Gründer und Testphasen</p></div>
+        <div class="betrag"><b>599</b><em>€</em><small>netto, einmalig</small></div>
+        <ul class="leistungen">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>1 Seite (One-Pager)</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Individuelles Design</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Texte und SEO inklusive</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>3 Korrekturschleifen</li>
+        </ul>
+        <a class="btn btn-rand" href="#angebot" data-paket="Landingpage (599 €)">Landingpage anfragen</a>
+      </article>
+      <article class="paket paket-top">
+        <span class="plakette">Bestseller</span>
+        <div><h3>Business Website</h3><p class="fuer">Für Selbstständige und KMU</p></div>
+        <div class="betrag"><b>999</b><em>€</em><small>netto, einmalig</small></div>
+        <ul class="leistungen">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F1BD58" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Bis zu 5 Unterseiten</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F1BD58" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Individuelles Design</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F1BD58" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Texte und SEO inklusive</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F1BD58" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>3 Korrekturschleifen</li>
+        </ul>
+        <a class="btn btn-gelb" href="#angebot" data-paket="Business Website (999 €)">Business Website anfragen</a>
+      </article>
+      <article class="paket">
+        <div><h3>Boost Website</h3><p class="fuer">Für komplexe Anforderungen</p></div>
+        <div class="betrag"><span class="ab">ab</span><b>1.899</b><em>€</em><small>netto</small></div>
+        <ul class="leistungen">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Bis zu 10 Unterseiten</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Individuelles Design</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Texte und SEO inklusive</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>3 Korrekturschleifen</li>
+        </ul>
+        <a class="btn btn-rand" href="#angebot" data-paket="Boost Website (ab 1.899 €)">Boost Website anfragen</a>
+      </article>
+    </div>
+    <div class="preis-info">
+      <div class="info-kasten" style="background:#fff"><strong>So läuft die Bezahlung</strong>50 % Anzahlung bei Auftragserteilung, die restlichen 50 % bei Fertigstellung. Klar geregelt, bevor es losgeht.</div>
+      <div class="info-kasten" style="background:#fff"><strong>Optional: Sorglos-Wartung für 49 € netto im Monat</strong>Updates, monatliches Backup und 30 Minuten Support. Monatlich kündbar, kein Muss.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ÜBER MICH -->
+<section class="sek" id="ueber-mich">
+  <div class="wrap ueber">
+    <div class="ueber-bild">
+      <img src="assets/lukas-rittmaier.jpg" alt="Porträt von Lukas Rittmaier" loading="lazy" width="1200" height="800">
+      <div class="stempel">Webdesigner<br>aus Bamberg</div>
+    </div>
+    <div>
+      <h2>Hi, ich bin Lukas. Und ich baue deine Website.</h2>
+      <p>Ich bin <strong>Webdesigner mit einem B.Sc. in E-Commerce</strong> und arbeite seit über 5 Jahren als Freelancer aus Frensdorf bei Bamberg. Bei mir gibt es kein Callcenter und keinen Projektmanager, der deine Wünsche weitergibt. Du hast meine Handynummer und sprichst von Anfang bis Ende direkt mit der Person, die deine Website baut.</p>
+      <p>Neben Webdesign kümmere ich mich für meine Kunden um <strong>Google Ads, SEO und Google Unternehmensprofile</strong>. Deshalb baue ich Websites nicht nur hübsch, sondern so, dass sie bei Google gefunden werden und Anfragen bringen.</p>
+      <p>Ich arbeite bewusst allein, ohne teures Büro und ohne Vertrieb. Genau das macht meine Festpreise möglich.</p>
+      <div class="fakten">
+        <div><b>70+</b><span>umgesetzte Projekte</span></div>
+        <div><b>5+</b><span>Jahre Erfahrung</span></div>
+        <div><b>5,0</b><span>Sterne bei Google</span></div>
+        <div><b>24 h</b><span>Antwortzeit</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VERGLEICH -->
+<section class="sek sek-papier">
+  <div class="wrap vergleich-grid">
+    <div>
+      <h2>Günstig heißt bei mir nicht billig.</h2>
+      <p>Die Ersparnis entsteht bei den Kosten, nicht bei der Qualität. Du bekommst ein individuelles Design, keine Vorlage, die schon 1.000 andere nutzen.</p>
+      <p>Bevor eine Zeile Code entsteht, siehst du deinen Entwurf in Figma. Gebaut wird erst, wenn er dir gefällt.</p>
+    </div>
+    <div class="tabelle-wrap">
+      <table>
+        <caption class="sr">Vergleich zwischen Baukasten, Agentur und RITT HAPPENS</caption>
+        <thead><tr><th scope="col"><span class="sr">Kriterium</span></th><th scope="col">Baukasten</th><th scope="col">Agentur</th><th scope="col" class="wir">RITT HAPPENS</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Preis</th><td>0 bis 30 € im Monat</td><td>3.000 bis 15.000 €</td><td class="wir">ab 599 € netto</td></tr>
+          <tr><th scope="row">Individuelles Design</th><td class="nein">Nein</td><td>Ja</td><td class="wir">Ja</td></tr>
+          <tr><th scope="row">Texte und SEO</th><td class="nein">Selbst machen</td><td>Meist Aufpreis</td><td class="wir">Inklusive</td></tr>
+          <tr><th scope="row">Fertig in</th><td>Deiner Freizeit</td><td>6 bis 12 Wochen</td><td class="wir">7 bis 14 Werktagen</td></tr>
+          <tr><th scope="row">Ansprechpartner</th><td class="nein">Support-Chat</td><td>Wechselnd</td><td class="wir">Immer Lukas</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section class="sek">
+  <div class="wrap">
+    <div class="kopfzeile"><h2>In 4 Schritten zur fertigen Website.</h2></div>
+    <ol class="schritte">
+      <li><h3>Kostenloses Gespräch</h3><p>Wir telefonieren kurz über dein Vorhaben. Danach bekommst du deinen Festpreis schriftlich.</p></li>
+      <li><h3>Auftrag und Fragebogen</h3><p>Mit der Anzahlung von 50 % geht es los. Fertige Texte brauchst du nicht, die schreibe ich aus deinen Antworten.</p></li>
+      <li><h3>Entwurf in Figma</h3><p>Du siehst das Design vorab und gibst es frei. Bis zu 3 Korrekturschleifen sind inklusive.</p></li>
+      <li><h3>Livegang</h3><p>Umsetzung in WordPress, SEO-Grundlagen, Launch. Alle Zugänge gehören dir.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- BEWERTUNGEN -->
+<section class="sek sek-papier">
+  <div class="wrap">
+    <div class="bew-kopf">
+      <h2>Was Kunden auf Google über mich schreiben.</h2>
+      <div class="bew-schnitt"><span aria-hidden="true">★★★★★</span>5,0 aus 20+ Bewertungen</div>
+    </div>
+    <div class="bewertungen">
+      <figure class="bewertung"><div class="st" aria-label="5 von 5 Sternen">★★★★★</div><blockquote>„Vielen Dank für den sehr freundlichen, schnellen und unkomplizierten Service! Lukas hat alles genau nach meinen Vorstellungen umgesetzt. Absoluter Top Service!“</blockquote><figcaption>Katja Limberger</figcaption></figure>
+      <figure class="bewertung"><div class="st" aria-label="5 von 5 Sternen">★★★★★</div><blockquote>„Vom Erstgespräch bis zur Umsetzung professionell und lösungsorientiert. Gutes Gefühl für Design und Funktionalität, schnell und unkompliziert in der Umsetzung.“</blockquote><figcaption>martin gra</figcaption></figure>
+      <figure class="bewertung"><div class="st" aria-label="5 von 5 Sternen">★★★★★</div><blockquote>„Das Preisleistungsverhältnis war sehr gut und ich kann RITT HAPPENS jedem empfehlen, der eine professionelle Unterstützung bei der Erstellung einer Website benötigt.“</blockquote><figcaption>Vesna Gray</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sek" id="faq">
+  <div class="wrap faq-grid">
+    <div>
+      <h2>Häufige Fragen zum Festpreis.</h2>
+      <p class="kontakt-mini">Deine Frage ist nicht dabei? Ruf mich an: <a href="tel:+491724985509">0172 4985509</a></p>
+    </div>
+    <div>
+      <details open>
+        <summary>Was ist im Festpreis wirklich drin?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Design, Texte, SEO-Grundlagen, die komplette Umsetzung und 3 Korrekturschleifen. Separat kommen nur Hosting und Domain dazu. Die zahlst du direkt beim Anbieter, ohne Aufschlag von mir.</p>
+      </details>
+      <details>
+        <summary>Wie läuft die Bezahlung ab?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>50 % zahlst du bei Auftragserteilung, die restlichen 50 % bei Fertigstellung. Das Angebot selbst und das Erstgespräch sind kostenlos und unverbindlich.</p>
+      </details>
+      <details>
+        <summary>Gibt es laufende Kosten?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Von mir nicht. Die Wartung für 49 € netto im Monat ist optional und monatlich kündbar.</p>
+      </details>
+      <details>
+        <summary>Gehört die Website danach mir?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Ja, zu 100 %. Alle Zugänge, Dateien und Inhalte liegen bei dir.</p>
+      </details>
+      <details>
+        <summary>Kann ich später selbst Texte ändern?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Ja. Deine Website läuft auf WordPress, Texte und Bilder tauschst du selbst. Bei größeren Änderungen helfe ich dir gerne.</p>
+      </details>
+      <details>
+        <summary>Was, wenn mir der Entwurf nicht gefällt?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <p>Dann passen wir ihn an, bevor gebaut wird. Du siehst alles vorab in Figma und gibst erst frei, wenn du zufrieden bist.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ABSCHLUSS -->
+<section>
+  <div class="wrap">
+    <div class="abschluss">
+      <div>
+        <h2>Dein Festpreis in 24 Stunden.</h2>
+        <p>Kurz anfragen, kostenlos beraten lassen und ein schriftliches Angebot erhalten.</p>
+      </div>
+      <div class="knoepfe">
+        <a class="btn btn-gelb" href="#angebot">Angebot anfordern</a>
+        <a class="btn btn-rand" href="https://wa.me/491724985509">Per WhatsApp schreiben</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="fusszeile">
+  <div class="wrap">
+    <img src="assets/logo-hell.png" alt="RITT HAPPENS" width="640" height="445" loading="lazy">
+    <p>© 2026 RITT HAPPENS, Lukas Rittmaier, Frensdorf bei Bamberg</p>
+    <nav aria-label="Rechtliches"><a href="https://ritt-happens.de/impressum">Impressum</a><a href="https://ritt-happens.de/datenschutz">Datenschutz</a></nav>
+  </div>
+</footer>
+
+<nav class="mobil-leiste" aria-label="Schnellkontakt">
+  <a class="btn btn-rand" href="tel:+491724985509">Anrufen</a>
+  <a class="btn btn-gelb" href="#angebot">Angebot anfordern</a>
+</nav>
+
+<script>
+// Danke-Seite nach dem Absenden (für Conversion-Tracking)
+document.getElementById('weiter').value = new URL('danke.html', location.href).href;
+// Zweistufiges Formular
+var f = document.getElementById('angebot');
+f.classList.add('js-steps');
+function zeige(n) {
+  f.classList.toggle('auf-2', n === 2);
+  document.getElementById('balken').style.width = n === 2 ? '100%' : '50%';
+  document.getElementById('schritt-text').textContent = 'Schritt ' + n + ' von 2';
+}
+function pruefe(box, fehler) {
+  var ok = true;
+  box.querySelectorAll('input[required]').forEach(function (el) {
+    var gut = el.type === 'radio' ? !!box.querySelector('input[name="' + el.name + '"]:checked') : el.checkValidity();
+    if (el.type !== 'radio') el.setAttribute('aria-invalid', gut ? 'false' : 'true');
+    if (!gut) ok = false;
+  });
+  document.getElementById(fehler).hidden = ok;
+  return ok;
+}
+document.getElementById('zu-schritt-2').addEventListener('click', function () {
+  if (!pruefe(document.getElementById('schritt-1'), 'fehler-1')) return;
+  zeige(2);
+  document.getElementById('name').focus();
+  // Hier optional ein Ads-/Analytics-Event für Schritt 1 senden
+});
+f.querySelectorAll('input[name="Paket"]').forEach(function (r) { r.addEventListener('change', function () { document.getElementById('fehler-1').hidden = true; }); });
+document.getElementById('zu-schritt-1').addEventListener('click', function () { zeige(1); });
+f.addEventListener('submit', function (e) {
+  var ok1 = pruefe(document.getElementById('schritt-1'), 'fehler-1');
+  if (!ok1) { e.preventDefault(); zeige(1); return; }
+  if (!pruefe(document.getElementById('schritt-2'), 'fehler-2')) e.preventDefault();
+});
+// Paket-Buttons wählen das Paket im Formular vor und springen zu Schritt 1
+document.querySelectorAll('[data-paket]').forEach(function (a) {
+  a.addEventListener('click', function () {
+    var r = f.querySelector('input[name="Paket"][value="' + a.dataset.paket + '"]');
+    if (r) r.checked = true;
+    zeige(1);
+  });
+});
+</script>
+</body>
+</html>
